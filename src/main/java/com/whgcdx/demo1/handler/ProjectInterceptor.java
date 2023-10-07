@@ -17,6 +17,9 @@ import javax.servlet.http.HttpServletResponse;
  * @version: 1.0
  */
 
+/*多个拦截器的执行顺序 pre1 - pre2 -pre3 -  controller  - post3 - post2 - post1 - after3 - after2 - after1 */
+/* 当 pre return true after 必定执行，当 pre return false post就不会执行，after执行情况看其对应的 pre 是否执行*/
+
 @Component
 public class ProjectInterceptor implements HandlerInterceptor {
     @Override
@@ -34,3 +37,5 @@ public class ProjectInterceptor implements HandlerInterceptor {
         HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
     }
 }
+
+

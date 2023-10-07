@@ -1,7 +1,5 @@
-package com.whgcdx.demo1.domain.response;
+package com.whgcdx.demo1.common.domain.response;
 
-
-import org.springframework.stereotype.Component;
 
 public class ResponseCodeConst {
 

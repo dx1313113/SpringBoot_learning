@@ -1,4 +1,4 @@
-package com.whgcdx.demo1.domain.response;
+package com.whgcdx.demo1.common.domain.response;
 
 
 import org.springframework.boot.configurationprocessor.json.JSONException;

@@ -7,7 +7,7 @@ import java.text.SimpleDateFormat;
  * @package: com.whgcdx.demo1.utils
  * @className: timeUtil
  * @author: dx
- * @description: TODO
+ * @description: TODO 时间日期相关工具类
  * @date: 2023/10/7 16:19
  * @version: 1.0
  */
@@ -27,8 +27,8 @@ public class TimeUtil {
         this.currentTime = currentTime;
     }
 
-    @Override
-    public String toString() {
+
+    public String format() {
         SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
         return formatter.format(currentTime);
     }

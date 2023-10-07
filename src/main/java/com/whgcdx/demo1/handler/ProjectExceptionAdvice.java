@@ -1,8 +1,8 @@
 package com.whgcdx.demo1.handler;
 
 
-import com.whgcdx.demo1.domain.response.ResponseCodeConst;
-import com.whgcdx.demo1.domain.response.ResponseResultDTO;
+import com.whgcdx.demo1.common.domain.response.ResponseCodeConst;
+import com.whgcdx.demo1.common.domain.response.ResponseResultDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
  * @package: com.whgcdx.demo1.handler
  * @className: ProjectExceptionAdvice
  * @author: dx
- * @description: TODO
+ * @description: TODO 异常处理
  * @date: 2023/10/7 12:58
  * @version: 1.0
  */
