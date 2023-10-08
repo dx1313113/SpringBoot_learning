@@ -1,0 +1,54 @@
+#设置启动环境
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zlms20210831?autoReconnect=true&useServerPreparedStmts=false&rewriteBatchedStatements=true&characterEncoding=UTF-8&useSSL=false&allowMultiQueries=true&useTimezone=true&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    #    druid数据源属性设置
+    druid:
+      max-active: 20
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-open-prepared-statements: 100
+      filters: stat,wall,log4j
+
+logging:
+  level:
+    root: info
+
+
+
+---
+#设置 dev 环境
+spring:
+  config:
+    activate:
+      on-profile: pro
+
+
+server:
+  port: 8080
+
+---
+#设置 pro 环境
+spring:
+  config:
+    activate:
+      on-profile: pro
+
+server:
+  port: 8081
+
+---
+#设置 test 环境
+spring:
+  config:
+    activate:
+      on-profile: test
+
+server:
+  port: 8082

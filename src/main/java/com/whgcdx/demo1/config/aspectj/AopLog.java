@@ -67,6 +67,16 @@ public class AopLog {
         httpServletRequest.setAttribute(START_TIME,System.currentTimeMillis());
     }
 
+    /**
+     * 环绕操作
+     */
+    @Around("log()")
+    public Object aroundLog(ProceedingJoinPoint point) throws Throwable {
+        Object result = point.proceed();
+        log.info("【返回值】：{}", JSON.toJSONString(result));
+        return result;
+    }
+
     /***
      *
      */
@@ -80,19 +90,10 @@ public class AopLog {
 
         String header=request.getHeader(Header.USER_AGENT.toString());
         UserAgent userAgent=UserAgentUtil.parse(header);
-        log.info("【浏览器类型】：{}，【操作系统】：{}，【原始User-Agent】：{}",
-                userAgent.getBrowser().toString(),
+        log.info("【操作系统】：{}，【原始User-Agent】：{}",
                 userAgent.getOs().toString(),
                 header);
     }
-    /**
-     * 环绕操作
-     */
-    @Around("log()")
-    public Object aroundLog(ProceedingJoinPoint point) throws Throwable {
-        Object result = point.proceed();
-        log.info("【返回值】：{}", JSON.toJSONString(result));
-        return result;
-    }
+
 
 }
