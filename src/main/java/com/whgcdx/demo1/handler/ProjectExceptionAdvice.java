@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
  * @package: com.whgcdx.demo1.handler
  * @className: ProjectExceptionAdvice
  * @author: dx
- * @description: TODO 全局异常处理
+ * @description: TODO 全局异常处理 功能开发ing
  * @date: 2023/10/7 12:58
  * @version: 1.0
  */
