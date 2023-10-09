@@ -23,6 +23,8 @@ logging:
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
   type-aliases-package: com.whgcdx.demo1.entity
+  configuration:
+    map-underscore-to-camel-case: true
 
 
 ---
