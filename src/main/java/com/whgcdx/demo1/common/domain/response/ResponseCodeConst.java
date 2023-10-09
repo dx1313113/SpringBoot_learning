@@ -1,5 +1,13 @@
 package com.whgcdx.demo1.common.domain.response;
-
+/**
+ * @projectName: demo1
+ * @package: com.whgcdx.demo1.domain.response
+ * @className: ResponseCodeConst
+ * @author: dx
+ * @description: TODO 定义 response 基本状态码
+ * @date: 2023/10/8 21:36
+ * @version: 1.0
+ */
 
 public class ResponseCodeConst {
 
