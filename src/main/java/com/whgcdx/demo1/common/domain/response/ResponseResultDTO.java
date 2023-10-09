@@ -4,6 +4,15 @@ package com.whgcdx.demo1.common.domain.response;
 import org.springframework.boot.configurationprocessor.json.JSONException;
 import org.springframework.boot.configurationprocessor.json.JSONObject;
 
+/**
+ * @projectName: demo1
+ * @package: com.whgcdx.demo1.domina.response
+ * @className: ResponseResultDTO
+ * @author: dx
+ * @description: TODO 定义基本 response 类
+ * @date: 2023/10/8 21:36
+ * @version: 1.0
+ */
 
 public class ResponseResultDTO<T> {
 
