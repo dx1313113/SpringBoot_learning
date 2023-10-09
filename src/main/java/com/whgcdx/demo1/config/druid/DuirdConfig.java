@@ -13,7 +13,7 @@ import javax.sql.DataSource;
  * @package: com.whgcdx.demo1.config.druid
  * @className: DuirdConfig
  * @author: dx
- * @description: TODO 配置数据库连接池
+ * @description: TODO 用于配置数据库连接池
  * @date: 2023/10/8 19:12
  * @version: 1.0
  */
