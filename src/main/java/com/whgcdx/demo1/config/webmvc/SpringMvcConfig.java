@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * @package: com.whgcdx.demo1.config.webmvc
  * @className: SpringMvcConfig
  * @author: dx
- * @description: TODO
+ * @description: TODO springmvc 配置类 暂未实现拦截功能
  * @date: 2023/10/7 14:14
  * @version: 1.0
  */
