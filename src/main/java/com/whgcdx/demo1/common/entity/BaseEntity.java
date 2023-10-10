@@ -17,7 +17,7 @@ import lombok.Data;
 public class BaseEntity {
 
     @TableId
-    protected Integer id;
+    protected Long id;
 
     protected Integer createAt;
 
