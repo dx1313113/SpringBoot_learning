@@ -1,6 +1,5 @@
-package com.whgcdx.demo1.entity;
+package com.whgcdx.demo1.domain.user;
 
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.whgcdx.demo1.common.entity.BaseEntity;
 import lombok.Data;
@@ -18,8 +17,7 @@ import java.io.Serializable;
  */
 
 @Data
-@TableName("sys_user")
-public class SysUserEntity extends BaseEntity implements Serializable{
+public class SysUserInsertDTO{
 
     private String userName;
 
