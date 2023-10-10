@@ -1,7 +1,13 @@
 package com.whgcdx.demo1.common.entity;
 
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
+
+import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * @projectName: demo1
@@ -14,14 +20,17 @@ import lombok.Data;
  */
 
 @Data
+@SuperBuilder
+@AllArgsConstructor
+@NoArgsConstructor
 public class BaseEntity {
 
-    @TableId
+    @TableId(type = IdType.AUTO)
     protected Long id;
-
-    protected Integer createAt;
-
-    protected Integer updateAt;
-
-    protected Integer deleteAt;
+    @TableField(fill = FieldFill.INSERT)
+    protected Date createdAt;
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    protected Date updatedAt;
+    @TableLogic
+    protected Boolean  deletedAt;
 }
